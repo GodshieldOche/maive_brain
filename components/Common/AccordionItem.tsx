@@ -46,7 +46,7 @@ function AccordionItem({
               width={28}
               height={28}
               icon="eva:minus-fill"
-              className={` transition-all duration-200 ease-linear ${
+              className={` transition-all duration-200 !text-white ease-linear ${
                 isOpen ? "block" : "hidden"
               }`}
             />
