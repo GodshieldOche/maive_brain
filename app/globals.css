@@ -2,26 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.contain {
+  @apply container max-w-screen-xl mx-auto px-4 md:px-8 lg:px-4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.large_text {
+  @apply text-[22px] md:text-3xl xl:text-[40px] leading-[55px] lg:leading-[70px] font-bold;
+}
+
+.big_text {
+  @apply text-base md:text-2xl xl:text-[29px] font-normal leading-10 xl:leading-[60px];
+}
+
+.medium_text {
+  @apply font-medium text-lg md:text-[22px] leading-[41px] font-SpaceG;
+}
+
+.small_text {
+  @apply text-base md:text-lg font-SpaceG;
+}
+
+.second_large {
+  @apply text-lg md:text-2xl lg:text-[26px] leading-[42px] md:leading-[50px] lg:leading-[70px] font-bold;
+}
+
+.second_small {
+  @apply text-base md:text-lg lg:text-xl leading-[40px] md:leading-[50px];
+}
+
+.how_it_works {
+  background-position: right center;
+}
+
+@media (min-width: 1024px) {
+  .how_it_works {
+    background-position: right bottom -65px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.opa_bg {
+  border-radius: 10px;
+  background: rgba(0, 27, 38, 0.4);
 }
