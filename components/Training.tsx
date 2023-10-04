@@ -15,7 +15,7 @@ const Training = () => {
           </h3>
         </div>
         <div className="w-full flex justify-center">
-          <TrainingCard />
+          <TrainingCard id={"cognitive"} />
         </div>
       </div>
     </div>

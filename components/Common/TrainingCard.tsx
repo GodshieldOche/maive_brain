@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
-const TrainingCard = () => {
+const TrainingCard: React.FC<{ id: string }> = ({ id }) => {
+  const router = useRouter();
   return (
     <div className="w-full max-w-[970px] bg-primaryOrange rounded-[15px] p-4 md:p-6 ">
       <div className="h-[211px] rounded-[10px] bg-training-svg "></div>
@@ -20,6 +23,7 @@ const TrainingCard = () => {
             backgroundColor: "#fff",
             color: "#FF8D6B",
           }}
+          action={() => router.push(`/training/${id}`)}
         />
       </div>
     </div>

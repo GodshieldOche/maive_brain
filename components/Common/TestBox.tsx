@@ -1,14 +1,18 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 interface Props {
   image: string;
   title: string;
   description: string;
+  id: string;
 }
 
-const TestBox: React.FC<Props> = ({ image, title, description }) => {
+const TestBox: React.FC<Props> = ({ image, title, description, id }) => {
+  const router = useRouter();
   return (
     <div className="w-full h-[400px] rounded-[10px] z-40 relative">
       <Image
@@ -23,7 +27,10 @@ const TestBox: React.FC<Props> = ({ image, title, description }) => {
           <h3 className="text-white second_small ">{description}</h3>
         </div>
 
-        <Button text="Take Free Online Test" />
+        <Button
+          text="Take Free Online Test"
+          action={() => router.push(`/training/${id}`)}
+        />
       </div>
     </div>
   );

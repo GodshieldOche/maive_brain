@@ -19,6 +19,7 @@ const WhatWeDo = () => {
             title="Dyslexia & Reading Disorders"
             description="Maive Brain is a one-on-one brain training center that uses over
             decades of research"
+            id="dyslexia"
           />
           <div className="w-full h-full flex flex-col justify-between">
             <TestText
@@ -49,6 +50,7 @@ const WhatWeDo = () => {
             title="Cognitive Assessments"
             description="Maive Brain is a one-on-one brain training center that uses over
             decades of research"
+            id="cognitive"
           />
           <div className="w-full h-full flex lg:hidden flex-col justify-between">
             <TestText
