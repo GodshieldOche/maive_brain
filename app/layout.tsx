@@ -32,10 +32,10 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${rubik.className} bg-lightOrange  text-primaryGreen m-0 p-0`}
+        className={`${rubik.className} bg-lightOrange   text-primaryGreen m-0 p-0`}
       >
         <Header />
-        <div className="!w-screen !overflow-x-hidden">{children}</div>
+        <div className="h-full !w-screen !overflow-x-hidden">{children}</div>
         <Footer />
       </body>
     </html>

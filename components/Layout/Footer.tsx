@@ -1,8 +1,15 @@
+"use client";
+
 import React from "react";
 import { Logo } from "../Common/Assets";
 import FooterLinks from "../Common/FooterLinks";
+import { useParams } from "next/navigation";
 
 const Footer = () => {
+  const params = useParams();
+  if (params.id) {
+    return <></>;
+  }
   return (
     <footer className="w-full bg-footer-svgM md:bg-footer-svg bg-no-repeat bg-bottom bg-contain">
       <div className="contain py-4  kg:py-8 w-full flex flex-col  gap-y-12 lg:gap-y-14  ">

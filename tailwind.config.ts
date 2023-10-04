@@ -25,6 +25,7 @@ const config: Config = {
         "mcontact-us-bg-svg": "url('/mcontactUsBg.svg')",
         "mteam-bg-svg": "url('/mteamBg.svg')",
         "team-bg-svg": "url('/teamBg.svg')",
+        "tdetails-svg": "url('/tdetails.svg')",
       },
       colors: {
         primaryGreen: "#203A31",
