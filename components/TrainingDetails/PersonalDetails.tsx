@@ -32,11 +32,11 @@ const PersonalDetails: React.FC<TrainingProps> = ({ action }) => {
   };
 
   return (
-    <div className="min-h-[45vh] w-[50vw] rounded-[15px] gap-y-8 flex flex-col items-center py-6 px-9 bg-[#22685D] ">
-      <h1 className="text-[28px] font-semibold text-white leading-[70px] ">
+    <div className="lg:min-h-[45vh] w-[90vw] lg:w-[50vw] rounded-[15px] gap-y-6 md:gap-y-8 flex flex-col items-center py-6 px-4 md:px-9 bg-[#22685D] ">
+      <h1 className="text-xl lg:text-[28px] font-semibold text-white md:leading-[70px] ">
         Enter Personal Details
       </h1>
-      <div className="w-full flex flex-col gap-y-6">
+      <div className="w-full flex flex-col gap-y-4 md:gap-y-6">
         <Input
           name="full_name"
           placeholder="Enter Full Name"
@@ -44,7 +44,7 @@ const PersonalDetails: React.FC<TrainingProps> = ({ action }) => {
           value={data.full_name}
           handelChange={handleChange}
         />
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           <Input
             name="email"
             placeholder="Enter Email Address"

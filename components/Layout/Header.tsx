@@ -6,7 +6,10 @@ import { Icon } from "@iconify/react";
 import { Logo } from "../Common/Assets";
 import { useRouter, useParams } from "next/navigation";
 
-const Header = () => {
+const Header: React.FC<{
+  show: boolean;
+  setShow: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ show, setShow }) => {
   const router = useRouter();
   const params = useParams();
 
@@ -44,12 +47,32 @@ const Header = () => {
         <div className="w-[68px] h-[17px] md:w-fit md:h-fit ">
           <Logo />
         </div>
-        <Icon
-          icon="solar:hamburger-menu-broken"
-          width={24}
-          height={24}
-          className="text-primaryRed"
-        />
+
+        {is_td ? (
+          <Icon
+            icon="lucide:x"
+            width={24}
+            height={24}
+            className="text-primaryRed"
+            onClick={() => router.push("/")}
+          />
+        ) : show ? (
+          <Icon
+            icon="lucide:x"
+            width={24}
+            height={24}
+            className="text-primaryRed"
+            onClick={() => setShow(false)}
+          />
+        ) : (
+          <Icon
+            icon="solar:hamburger-menu-broken"
+            width={24}
+            height={24}
+            className="text-primaryRed"
+            onClick={() => setShow(true)}
+          />
+        )}
       </nav>
     </header>
   );

@@ -7,14 +7,19 @@ import React from "react";
 interface Props {
   path: string;
   text: string;
+  setShow?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const NavLink: React.FC<Props> = ({ path, text }) => {
+const NavLink: React.FC<Props> = ({ path, text, setShow }) => {
   const pathname = usePathname().split("/")[1];
 
   return (
     <li className="w-fit h-fit flex flex-col xl:flex-row xl:items-center  relative ">
-      <Link href={`/${path}`} className="text-primaryGreen  cursor-pointer ">
+      <Link
+        href={`/${path}`}
+        onClick={() => setShow?.(false)}
+        className="text-primaryGreen  cursor-pointer "
+      >
         {text}
       </Link>
       {path === pathname && (

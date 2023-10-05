@@ -19,14 +19,14 @@ const Input: React.FC<Props> = ({
 }) => {
   return (
     <div className="flex flex-col gap-y-3 w-full">
-      <h1 className="small_text text-white">{label}</h1>
+      <h1 className="small_text text-sm md:text-lg text-white">{label}</h1>
       <input
         placeholder={placeholder}
         value={value}
         type={type}
         onChange={handelChange}
         name={name}
-        className="py-4 outline-none px-4 text-base  !text-white font-SpaceG placeholder:font-SpaceG rounded-[15px] bg-primaryGreen "
+        className="py-4 outline-none px-4 text-sm md:text-base  !text-white font-SpaceG placeholder:font-SpaceG rounded-[15px] bg-primaryGreen "
       />
     </div>
   );

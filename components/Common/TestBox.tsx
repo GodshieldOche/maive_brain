@@ -18,6 +18,9 @@ const TestBox: React.FC<Props> = ({ image, title, description, id }) => {
       <Image
         src={image}
         fill
+        style={{
+          objectFit: "cover",
+        }}
         className="rounded-[10px] bg-contain w-full h-full"
         alt="Test Image"
       />
