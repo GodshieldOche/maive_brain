@@ -4,9 +4,10 @@ import "./globals.css";
 import { Rubik } from "next/font/google";
 import Footer from "@/components/Layout/Footer";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "@/components/Layout/Menu";
 import NextNprogress from "nextjs-progressbar";
+import initAOS from "@/initAOS";
 
 export const rubik = Rubik({ subsets: ["latin"] });
 
@@ -16,6 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    initAOS();
+  }, []);
 
   return (
     <html lang="en">

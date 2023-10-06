@@ -21,7 +21,10 @@ const WhatWeDo = () => {
             decades of research"
             id="dyslexia"
           />
-          <div className="w-full h-full flex flex-col justify-between">
+          <div
+            data-aos="fade-right"
+            className="w-full h-full flex flex-col justify-between"
+          >
             <TestText
               title="Attention Deficit Disorder"
               description=" Maive Brain is a one-on-one brain training center that uses over decades
@@ -33,7 +36,10 @@ const WhatWeDo = () => {
                 of research"
             />
           </div>
-          <div className="w-full h-full hidden lg:flex flex-col justify-between">
+          <div
+            data-aos="fade-left"
+            className="w-full h-full hidden lg:flex flex-col justify-between"
+          >
             <TestText
               title="Speech Disorders"
               description=" Maive Brain is a one-on-one brain training center that uses over decades

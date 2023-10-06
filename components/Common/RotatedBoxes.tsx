@@ -4,7 +4,7 @@ import { JoinImage } from "./Assets";
 const RotatedBoxes = () => {
   return (
     <div className="w-full flex flex-col relative gap-y-40 px-[6px] ">
-      <div className="w-[599px] z-40 px-8 py-12 rotate-[13.9deg] rounded-[10px] bg-primaryGreen">
+      <div className="w-[599px] hover:animate-bounce hover:delay-500 z-40 px-8 py-12 rotate-[13.9deg] rounded-[10px] bg-primaryGreen">
         <h1 className="text-[26px] font-semibold text-white ">
           Assessment and Personalisation Plan
         </h1>

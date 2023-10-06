@@ -14,7 +14,10 @@ interface Props {
 const TestBox: React.FC<Props> = ({ image, title, description, id }) => {
   const router = useRouter();
   return (
-    <div className="w-full h-[400px] rounded-[10px] z-40 relative">
+    <div
+      data-aos="fade"
+      className="w-full h-[400px] rounded-[10px] z-40 relative"
+    >
       <Image
         src={image}
         fill
