@@ -8,7 +8,8 @@ const Hero = () => {
         <article className="flex flex-col  gap-y-4" data-aos="fade-right">
           <FourDots />
           <h1 className="large_text">
-            em ipsum dolor sit amet, consectetur adipiscing el
+            We Offer Cognitive Development Programs for Neurodivergent
+            Individuals
           </h1>
         </article>
         <figure

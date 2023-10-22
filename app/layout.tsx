@@ -6,10 +6,11 @@ import Footer from "@/components/Layout/Footer";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Menu from "@/components/Layout/Menu";
-import NextNprogress from "nextjs-progressbar";
 import initAOS from "@/initAOS";
 
-export const rubik = Rubik({ subsets: ["latin"] });
+export const rubik = Rubik({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -38,11 +39,10 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${rubik.className} bg-lightOrange text-primaryGreen m-0 p-0`}
+        className={`${rubik.className} bg-lightOrange h-full text-primaryGreen`}
       >
-        <NextNprogress color="#FF6D6A" />
         <Header show={show} setShow={setShow} />
-        <div className="h-full !w-screen !overflow-x-hidden">{children}</div>
+        <div className="h-full !w-screen ">{children}</div>
         <Footer />
         {show && <Menu show={show} setShow={setShow} />}
       </body>

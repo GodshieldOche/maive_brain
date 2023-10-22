@@ -36,8 +36,7 @@ const Faq = () => {
               Frequently Asked Questions
             </h1>
             <h3 className="medium_text !leading-[50px]">
-              Maive Brain is a one-on-one brain training center brain training
-              center
+              Everything you need to know about Maive Brain
             </h3>
           </div>
         </div>

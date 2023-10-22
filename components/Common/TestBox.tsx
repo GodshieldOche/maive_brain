@@ -36,6 +36,9 @@ const TestBox: React.FC<Props> = ({ image, title, description, id }) => {
         <Button
           text="Take Free Online Test"
           action={() => router.push(`/training/${id}`)}
+          styles={{
+            backgroundColor: "#FF8D6B",
+          }}
         />
       </div>
     </div>

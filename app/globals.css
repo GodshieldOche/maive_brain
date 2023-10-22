@@ -11,15 +11,15 @@
 }
 
 .big_text {
-  @apply text-base md:text-2xl xl:text-[29px] font-normal leading-10 xl:leading-[60px];
+  @apply text-base md:text-2xl xl:text-[29px] !font-normal leading-10 xl:leading-[60px];
 }
 
 .medium_text {
-  @apply font-medium text-lg md:text-[22px] leading-[41px] font-SpaceG;
+  @apply font-medium text-lg md:text-[22px] leading-[41px] !font-SpaceG;
 }
 
 .small_text {
-  @apply text-base md:text-lg font-SpaceG;
+  @apply text-base md:text-lg !font-SpaceG;
 }
 
 .second_large {
@@ -27,7 +27,7 @@
 }
 
 .second_small {
-  @apply text-base md:text-lg lg:text-xl leading-[40px] md:leading-[50px];
+  @apply text-base md:text-lg lg:text-xl !font-SpaceG !leading-[40px] md:!leading-[50px];
 }
 
 .how_it_works {
@@ -44,3 +44,53 @@
   border-radius: 10px;
   background: rgba(0, 27, 38, 0.4);
 }
+
+.about-bg {
+  background-image: url("../public/aboutBgM_one.svg"),
+    url("../public/aboutBgM_two.svg");
+  background-size: contain, contain;
+  background-position: bottom left -10px, top right;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1440px) {
+  .about-bg {
+    background-image: url("../public/aboutBg_one.svg"),
+      url("../public/aboutBg_two.svg");
+    background-size: contain, contain;
+    background-position: left, top right;
+    background-repeat: no-repeat;
+  }
+}
+
+/* :root {
+  --cards: 2;
+  --cardHeight: 87vh;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
+}
+
+#cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), auto);
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  margin-bottom: var(--cardMargin);
+  position: relative;
+}
+
+#cognitive {
+  --index: 1;
+}
+#cognitive_two {
+  --index: 2;
+}
+
+.card {
+  position: sticky !important;
+  top: 120px;
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+} */

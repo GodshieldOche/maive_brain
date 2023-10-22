@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../Common/Button";
-import { TrainingProps } from "@/interface";
+import { useRouter } from "next/navigation";
 
-const GetStarted: React.FC<TrainingProps> = ({ action }) => {
+const GetStarted: React.FC = () => {
+  const router = useRouter();
   return (
     <div className="w-[90vw] lg:min-h-[45vh] lg:w-[45vw] rounded-[15px] gap-y-12 flex flex-col items-center py-6 px-9 bg-[#22685D] ">
       <div className="flex flex-col gap-y-6 w-full items-center justify-center">
@@ -20,7 +21,7 @@ const GetStarted: React.FC<TrainingProps> = ({ action }) => {
         styles={{
           backgroundColor: "#FF6D6A",
         }}
-        action={action}
+        action={() => router.push("?step=1")}
       />
     </div>
   );

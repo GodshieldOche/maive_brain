@@ -9,10 +9,10 @@ const About = () => {
     >
       <FourDots />
       <h1 className="large_text">About Maive Brain</h1>
-      <h2 className="big_text text-center ">
-        Maive Brain is a one-on-one brain training center that uses over decades
-        of research to target skills that are important to how you learn and
-        perform.
+      <h2 className="big_text text-center px-3  ">
+        Our mission is for everyone to be a successful learner through our
+        comprehensive testing and training programs to ensure that necessary
+        intellectual learning abilities are well-developed and in place.
       </h2>
     </section>
   );

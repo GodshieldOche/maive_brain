@@ -27,13 +27,11 @@ const WhatWeDo = () => {
           >
             <TestText
               title="Attention Deficit Disorder"
-              description=" Maive Brain is a one-on-one brain training center that uses over decades
-                of research"
+              description="(ADHD) is a condition that affects people's behaviour, appearing restless & trouble concentrating "
             />
             <TestText
               title="Memory Loss"
-              description=" Maive Brain is a one-on-one brain training center that uses over decades
-                of research"
+              description="An unusual forgetfulness affecting the ability to remember new events or recall old memories "
             />
           </div>
           <div
@@ -42,13 +40,11 @@ const WhatWeDo = () => {
           >
             <TestText
               title="Speech Disorders"
-              description=" Maive Brain is a one-on-one brain training center that uses over decades
-                of research"
+              description="is a condition in which a person has problems creating  the speech sounds needed to communicate with others"
             />
             <TestText
               title="Autism Spectrum"
-              description=" Maive Brain is a one-on-one brain training center that uses over decades
-                of research"
+              description="ASD is a  neuro disorder caused by differences in the brain, affecting social interactions & communication"
             />
           </div>
           <TestBox
@@ -58,16 +54,18 @@ const WhatWeDo = () => {
             decades of research"
             id="cognitive"
           />
-          <div className="w-full h-full flex lg:hidden flex-col justify-between">
+
+          <div
+            data-aos="fade-right"
+            className="w-full h-full flex lg:hidden flex-col justify-between"
+          >
             <TestText
               title="Speech Disorders"
-              description=" Maive Brain is a one-on-one brain training center that uses over decades
-                of research"
+              description="is a condition in which a person has problems creating  the speech sounds needed to communicate with others"
             />
             <TestText
               title="Autism Spectrum"
-              description=" Maive Brain is a one-on-one brain training center that uses over decades
-                of research"
+              description="ASD is a  neuro disorder caused by differences in the brain, affecting social interactions & communication"
             />
           </div>
         </div>

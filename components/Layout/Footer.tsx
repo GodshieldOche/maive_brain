@@ -15,8 +15,9 @@ const Footer = () => {
       <div className="contain py-4  kg:py-8 w-full flex flex-col  gap-y-12 lg:gap-y-14  ">
         <div className="flex flex-col w-full gap-y-6 items-center ">
           <Logo />
-          <h2 className="max-w-[492px] medium_text text-center">
-            The architecture for accelerating global web3 adoption.
+          <h2 className=" medium_text text-center">
+            Helping students and adult of all ages
+            <br className="hidden md:block" /> achieve success
           </h2>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-40 ">

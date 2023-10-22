@@ -10,12 +10,15 @@ const Training = () => {
           <FourDots />
           <h1 className="large_text">Trainning Programs</h1>
           <h3 className="medium_text text-center !mt-2">
-            Maive Brain is a one-on-one brain training center brain training
-            center
+            We work with learners who may be struggling academically,{" "}
+            <br className="hidden md:block" /> career adults and seniors
           </h3>
         </div>
         <div className="w-full flex justify-center">
-          <TrainingCard id={"cognitive"} />
+          <div id="cards">
+            <TrainingCard id={"cognitive"} />
+            {/* <TrainingCard id={"cognitive_two"} /> */}
+          </div>
         </div>
       </div>
     </div>

@@ -1,16 +1,11 @@
 import { TrainingProps } from "@/interface";
-import React, { useState } from "react";
+import React from "react";
 import Input from "../Common/Input";
 import Button from "../Common/Button";
+import { useRouter } from "next/navigation";
 
-const PersonalDetails: React.FC<TrainingProps> = ({ action }) => {
-  const [data, setData] = useState({
-    full_name: "",
-    email: "",
-    phone_no: "",
-    for: "",
-    relationship: "",
-  });
+const PersonalDetails: React.FC<TrainingProps> = ({ data, setData }) => {
+  const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setData(
@@ -28,7 +23,7 @@ const PersonalDetails: React.FC<TrainingProps> = ({ action }) => {
       return;
     }
 
-    action();
+    router.push("?step=2");
   };
 
   return (

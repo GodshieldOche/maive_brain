@@ -3,8 +3,8 @@ import About from "../Common/About";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[calc(100vh-64px)] lg:h-[calc(100vh-80px)] relative">
-      <div className="contain w-full  h-full relative flex justify-center items-center ">
+    <div className="w-full h-[calc(100vh-64px)] lg:h-[calc(100vh-80px)] about-bg relative">
+      <div className="contain w-full  h-full relative flex justify-center items-center  ">
         <About />
       </div>
       {/* <div className="absolute  hidden xl:block top-0 left-0">
