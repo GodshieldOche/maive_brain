@@ -10,9 +10,11 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
+
       <div className="contain py-16">
         <About />
       </div>
+
       <HowItWorks />
       <WhatWeDo />
       <Training />

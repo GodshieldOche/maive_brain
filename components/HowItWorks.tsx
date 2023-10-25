@@ -7,7 +7,10 @@ import ContentBox from "./Common/ContentBox";
 const HowItWorks = () => {
   const [activeCard, setActiveCard] = useState("first");
   return (
-    <div className="bg-mhowitworks-svg lg:bg-howitworks-svg bg-no-repeat py-10 lg:py-56 bg-auto how_it_works">
+    <div
+      id="hello"
+      className="bg-mhowitworks-svg lg:bg-howitworks-svg bg-no-repeat py-10 lg:py-56 bg-auto how_it_works"
+    >
       <div className="contain hidden lg:grid grid-cols-2 gap-x-28 items-center">
         <RotatedBoxes setActiveCard={setActiveCard} />
         <div className="w-full min-h-[524px] space-y-2  ">

@@ -9,7 +9,7 @@ const About = () => {
     >
       <FourDots />
       <h1 className="large_text">About Maive Brain</h1>
-      <h2 className="big_text text-center px-3  ">
+      <h2 className="big_text text-center  ">
         Our mission is for everyone to be a successful learner through our
         comprehensive testing and training programs to ensure that necessary
         intellectual learning abilities are well-developed and in place.

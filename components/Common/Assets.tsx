@@ -19,7 +19,7 @@ export const Logo = () => {
 
 export const HeroImage = () => {
   return (
-    <div className="w-[300px] h-[280px] md:w-fit md:h-fit ">
+    <div className="w-[300px] relative h-[280px] md:w-fit md:h-fit ">
       <Image src={HeroImg} alt="Hero Image" />
     </div>
   );
