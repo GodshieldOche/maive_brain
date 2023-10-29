@@ -11,7 +11,7 @@ const TrainingCard: React.FC<{ id: string }> = ({ id }) => {
   return (
     <div
       id={id}
-      className="w-full card max-w-[970px] bg-primaryOrange rounded-[15px] p-4 md:p-6 "
+      className="w-full max-w-[970px] bg-primaryOrange rounded-[15px] p-4 md:p-6 "
       style={{
         marginTop: id === "cognitive_two" ? "32px" : "16px",
       }}

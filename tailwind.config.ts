@@ -15,7 +15,7 @@ const config: Config = {
         "training-svg": "url('/training.svg')",
         "testimonial-svg": "url('/testimonialBg.svg')",
         "faq-svg": "url('/faqBg.svg')",
-        "trainingbg-svg": "url('/trainingbg.svg')",
+        "trainingbg-svg": "url('/trainingBg.svg')",
         "testimonialbg-svg": "url('/testimonial.svg')",
         "mhowitworks-svg": "url('/mhowitworks.svg')",
         "mtrainingBg-svg": "url('/mtrainingBg.svg')",

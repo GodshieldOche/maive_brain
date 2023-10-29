@@ -1,10 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import { FourDots } from "./Common/Assets";
 import TrainingCard from "./Common/TrainingCard";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Training = () => {
+  const card1Ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // stacked cards scrolling effect with gsap scrolltrigger
+    const card1 = card1Ref.current;
+    if (!card1) {
+      return;
+    }
+  }, []);
+
   return (
-    <div className="w-full h-full mt-16 pb-16 bg-mtrainingBg-svg lg:bg-trainingbg-svg bg-no-repeat bg-right ">
+    <div className="w-full h-full mt-16 pb-16  ">
       <div className="contain w-full flex flex-col gap-y-10 ">
         <div className="w-full flex  flex-col justify-center items-center space-y-4 ">
           <FourDots />
@@ -16,7 +31,12 @@ const Training = () => {
         </div>
         <div className="w-full flex justify-center">
           <div id="cards">
-            <TrainingCard id={"cognitive"} />
+            <div className="card" id="card_1">
+              <TrainingCard id={"cognitive"} />
+            </div>
+            <div className="card" id="card_2">
+              <TrainingCard id={"cognitive"} />
+            </div>
             {/* <TrainingCard id={"cognitive_two"} /> */}
           </div>
         </div>

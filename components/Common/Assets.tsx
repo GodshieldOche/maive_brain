@@ -38,7 +38,7 @@ export const JoinImage = () => {
         <path
           d="M0.219727 0H14.2197C3.97132 95.1276 4.71037 146.846 14.2197 237H0.219727V0Z"
           fill="#06748D"
-          fill-opacity="0.3"
+          fillOpacity="0.3"
         />
       </svg>
 
@@ -52,7 +52,7 @@ export const JoinImage = () => {
         <path
           d="M0.219727 0H11.2197C3.1674 79.4737 3.74809 122.681 11.2197 198H0.219727V0Z"
           fill="#06748D"
-          fill-opacity="0.3"
+          fillOpacity="0.3"
         />
       </svg>
       <svg
@@ -65,7 +65,7 @@ export const JoinImage = () => {
         <path
           d="M18.2197 0H0.219727C13.3963 79.4737 12.446 122.681 0.219727 198H18.2197V0Z"
           fill="#06748D"
-          fill-opacity="0.3"
+          fillOpacity="0.3"
         />
       </svg>
     </div>
