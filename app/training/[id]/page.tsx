@@ -29,29 +29,9 @@ const TrainingDetails = () => {
     } else if (step === 2) {
       return <TestOne setAnswers={setAnswers} answers={answers} />;
     } else {
-      return <Complete answers={answers} />;
+      return <Complete answers={answers} data={data} />;
     }
   };
-
-  const unloadListerner = (e: BeforeUnloadEvent) => {
-    e.preventDefault();
-    e.returnValue = "";
-
-    const message =
-      "Are you sure you want to leave? Your changes may not be saved.";
-
-    e.returnValue = message;
-    return message;
-  };
-
-  // Prevent window reload reload or exit
-  useEffect(() => {
-    window.addEventListener("beforeunload", unloadListerner);
-
-    return () => {
-      window.removeEventListener("beforeunload", unloadListerner);
-    };
-  }, []);
 
   return (
     <div className="bg-tdetails-svg bg-fixed w-full pt-36 pb-10 flex items-center justify-center min-h-screen">

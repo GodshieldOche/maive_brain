@@ -15,6 +15,26 @@ const TestOne: React.FC<Props> = ({ setAnswers, answers }) => {
   const { id } = useParams();
   const router = useRouter();
 
+  const unloadListerner = (e: BeforeUnloadEvent) => {
+    e.preventDefault();
+    e.returnValue = "";
+
+    const message =
+      "Are you sure you want to leave? Your changes may not be saved.";
+
+    e.returnValue = message;
+    return message;
+  };
+
+  // Prevent window reload reload or exit
+  useEffect(() => {
+    window.addEventListener("beforeunload", unloadListerner);
+
+    return () => {
+      window.removeEventListener("beforeunload", unloadListerner);
+    };
+  }, []);
+
   useEffect(() => {
     setSelected(answers[question] || "");
   }, [question]);

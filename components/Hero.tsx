@@ -74,29 +74,28 @@ const Hero = () => {
   return (
     <div className=" header relative contain w-full flex h-full items-center min-h-[calc(100vh-64px)] lg:min-h-screen">
       <section className="grid grid-cols-1 w-full items-center gap-y-20 lg:gap-4 lg:grid-cols-2">
-        <article ref={contentRef} className="flex flex-col   gap-y-4">
-          <div className="relative flex flex-col gap-y-4">
-            <div className="four_dots" ref={fourDots}>
-              <FourDots />
-            </div>
-            <h1 className="test large_text">
-              We Offer Cognitive Development Programs for Neurodivergent
-              Individuals
-            </h1>
-            {/* <h1 className="text2 opacity-0 large_text">
-              Helping you Address Learning Challenges, Intellectual Abilities &
-              Expand Career Opportunities
-            </h1> */}
+        <article
+          ref={contentRef}
+          className="flex flex-col   gap-y-4"
+          data-aos="fade-right"
+        >
+          <div className="four_dots" ref={fourDots}>
+            <FourDots />
           </div>
+          <h1 className="test large_text">
+            We Offer Cognitive Development Programs for Neurodivergent
+            Individuals
+          </h1>
         </article>
-        <div
+        <figure
           ref={figureRef}
+          data-aos="zoom-in"
           className="w-full h-full  items-center flex justify-center lg:justify-end order-first lg:order-last"
         >
           <div className="w-[300px]  h-[280px] md:w-fit md:h-fit ">
             <HeroImage />
           </div>
-        </div>
+        </figure>
       </section>
     </div>
   );

@@ -3,9 +3,38 @@ import React, { useEffect } from "react";
 import SuccessGif from "../../public/success.gif";
 import { useParams, useRouter } from "next/navigation";
 
-const Complete: React.FC<{ answers: string[] }> = ({ answers }) => {
+const Complete: React.FC<{
+  answers: string[];
+  data: {
+    full_name: string;
+    email: string;
+    phone_no: string;
+    for: string;
+    relationship: string;
+  };
+}> = ({ answers, data }) => {
   const router = useRouter();
   const { id } = useParams();
+
+  useEffect(() => {
+    const link = document.createElement("a");
+
+    const senderInfo: string[] = [];
+
+    Object.keys(data).forEach((key) => {
+      senderInfo.push(`${key}: ${data[key as keyof typeof data]}`);
+    });
+
+    const result = answers.join(",");
+
+    const subject = id.toString().toUpperCase() + " " + "Pre-Screener";
+    const body = `${senderInfo.join("\n")}\n\n${result}`;
+    link.href = `mailto:evasolace07@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    link.click();
+  }, []);
 
   useEffect(() => {
     if (!answers.length) {

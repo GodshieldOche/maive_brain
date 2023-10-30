@@ -19,7 +19,7 @@ const Training = () => {
   }, []);
 
   return (
-    <div className="w-full h-full mt-16 pb-16  ">
+    <div className="w-full h-full mt-16 pb-16 bg-mtrainingBg-svg lg:bg-trainingbg-svg bg-no-repeat bg-right  ">
       <div className="contain w-full flex flex-col gap-y-10 ">
         <div className="w-full flex  flex-col justify-center items-center space-y-4 ">
           <FourDots />
@@ -37,10 +37,12 @@ const Training = () => {
             <div className="card" id="card_2">
               <TrainingCard id={"cognitive"} />
             </div>
-            {/* <TrainingCard id={"cognitive_two"} /> */}
           </div>
         </div>
       </div>
+      <a href="mailto:recipient@example.com?subject=Your%20Subject&body=Your%20message%20goes%20here">
+        Send Email
+      </a>
     </div>
   );
 };
