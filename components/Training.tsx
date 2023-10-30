@@ -3,21 +3,10 @@ import React, { useEffect, useRef } from "react";
 import { FourDots } from "./Common/Assets";
 import TrainingCard from "./Common/TrainingCard";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Training = () => {
-  const card1Ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // stacked cards scrolling effect with gsap scrolltrigger
-    const card1 = card1Ref.current;
-    if (!card1) {
-      return;
-    }
-  }, []);
-
   return (
     <div className="w-full h-full mt-16 pb-16 bg-mtrainingBg-svg lg:bg-trainingbg-svg bg-no-repeat bg-right  ">
       <div className="contain w-full flex flex-col gap-y-10 ">
@@ -40,9 +29,6 @@ const Training = () => {
           </div>
         </div>
       </div>
-      <a href="mailto:recipient@example.com?subject=Your%20Subject&body=Your%20message%20goes%20here">
-        Send Email
-      </a>
     </div>
   );
 };
