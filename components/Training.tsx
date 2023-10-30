@@ -1,10 +1,7 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FourDots } from "./Common/Assets";
 import TrainingCard from "./Common/TrainingCard";
-import gsap from "gsap";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Training = () => {
   return (
